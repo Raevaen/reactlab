@@ -8,6 +8,7 @@
 
 # production
 /build
+*./build-info
 
 # misc
 .DS_Store
@@ -22,5 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Hardhat files
+ignition/deployments/
 artifacts/
 cache/

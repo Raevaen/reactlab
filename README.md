@@ -26,8 +26,12 @@ npx hardhat node
 new terminal
 npx hardhat ignition deploy ignition/modules/[name].[ts|js] --network localhost
 
+## verify/debug
+npx hardhat ignition visualize ./ignition/modules/Apollo.js
+
 ## guide to migrate from truffle to hardhat
 create ignition/module
-remove build
+remove build/
+remove migrations/
 remove truffle.config.js
 install hardhat and its plugins
