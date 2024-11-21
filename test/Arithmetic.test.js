@@ -11,7 +11,6 @@ describe("Arithmetic", function () {
   });
 
   it("should add two numbers correctly", async function () {
-    
     expect(await arithmetic.add(1, 2)).to.equal(3);
   });
 
