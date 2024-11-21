@@ -18,6 +18,10 @@ npx hardhat node
 ## compile
 npx hardhat compile
 
+## test
+require folder ./test
+npx hardhat test
+
 ## deploy 
 npx hardhat node
 
