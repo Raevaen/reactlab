@@ -17,5 +17,12 @@ describe("Arithmetic", function () {
   it("should subtract two numbers correctly", async function () {
     expect(await arithmetic.subtract(5, 3)).to.equal(2);
   });
+  
+  it("should throw an error when subtracting two numbers where a < b", async function () {
+    await expect(arithmetic.subtract(2, 5)).to.be.revertedWith("a should be greater than or equal to b");
+  });
 
+  it("should multiply two numbers correctly", async function () {
+    expect(await arithmetic.multiply(2, 3)).to.equal(6);
+  });
 });
